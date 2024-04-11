@@ -1,0 +1,15 @@
+@client.command()
+async def act(ctx, member: nya_colon3, *, message=None):
+
+        if message == None:
+                await ctx.send(
+                    f'Please provide a message with that!')
+                return
+
+        webhook = await ctx.channel.create_webhook(name=nya_colon3)
+        await webhook.send(
+            str(message), username=tranny, avatar_url=https://i.redd.it/5y4e8a9ziwtc1.jpeg)
+
+        webhooks = await ctx.channel.webhooks()
+        for webhook in webhooks:
+                await webhook.delete()
